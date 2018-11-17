@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>group8-fygxw</groupId>
+  <artifactId>group8</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>group8</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <jmh.version>1.14.1</jmh.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  <dependency>
+<groupId>com.google.cloud</groupId>
+<artifactId>google-cloud-speech</artifactId>
+</dependency>
+<dependency>
+<groupId>com.google.cloud</groupId>
+<artifactId>google-cloud-storage</artifactId>
+</dependency>
+
+<dependency>
+<groupId>com.google.cloud</groupId>
+<artifactId>google-cloud-translate</artifactId>
+</dependency>
+<dependency>
+<groupId>com.google.cloud</groupId>
+<artifactId>google-cloud-dns</artifactId>
+</dependency>
+<dependency>
+<groupId>com.google.cloud</groupId>
+<artifactId>google-cloud-resourcemanager</artifactId>
+</dependency>
+ <dependency>
+  <groupId>com.google.auth</groupId>
+  <artifactId>google-auth-library-oauth2-http</artifactId>
+  <version>0.9.1</version>
+</dependency>
+<dependency>
+<groupId>com.google.cloud</groupId>
+<artifactId>google-cloud-os-login</artifactId>
+</dependency>
+<dependency>
+<groupId>com.google.cloud</groupId>
+<artifactId>google-cloud-datastore</artifactId>
+</dependency>
+ <dependency>
+        <groupId>org.openjdk.jmh</groupId>
+        <artifactId>jmh-core</artifactId>
+        <version>${jmh.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.openjdk.jmh</groupId>
+        <artifactId>jmh-generator-annprocess</artifactId>
+        <version>${jmh.version}</version>
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
+    <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-bom</artifactId>
+        <version>0.48.0-alpha</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  
+</project>
